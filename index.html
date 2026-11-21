@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TableSnap – Web Table &amp; List Extractor for Chrome</title>
-  <meta name="description" content="Extract any web table or list, enrich emails & phones locally, and export to Excel, AI, or Webhooks in 1 click. A privacy-first Chrome extension.">
-  <meta property="og:title" content="TableSnap – Web Table & List Extractor">
-  <meta property="og:description" content="Extract any web table or list, enrich emails & phones locally, and export to Excel, AI, or Webhooks in 1 click.">
+  <title>TableSnap – Copy any web table or list into Excel</title>
+  <meta name="description" content="Point at a table or list on any website and get clean rows in Excel, Google Sheets, CSV or your AI assistant. Free Chrome extension, runs 100% in your browser.">
+  <meta property="og:title" content="TableSnap – Copy any web table or list into Excel">
+  <meta property="og:description" content="Point at a table or list on any website and get clean rows in Excel, Sheets, CSV or your AI. Free, private, no sign-up.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://tablesnap.github.io/img/1-extract-table.jpg">
   <link rel="icon" type="image/png" href="icon128.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- ================================================================
-       EDIT THESE TWO LINKS AFTER PUBLISHING:
+       EDIT AFTER PUBLISHING:
        1) Chrome Web Store URL  -> search for  CHROME_STORE_URL  below
        2) Support e-mail        -> search for  patatapy@gmail.com
        ================================================================ -->
@@ -21,230 +25,289 @@
   <header class="site-header">
     <div class="container nav">
       <a class="logo" href="#top" aria-label="TableSnap home">
-        <img src="icon128.png" alt="" width="32" height="32">
+        <img src="icon128.png" alt="" width="30" height="30">
         <span>TableSnap</span>
       </a>
       <nav class="nav-links" aria-label="Main">
+        <a href="#examples">Examples</a>
         <a href="#features">Features</a>
-        <a href="#how">How it works</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <!-- CHROME_STORE_URL: replace "#pricing" with your Chrome Web Store listing URL -->
-      <a class="btn btn-primary btn-small" href="#pricing">Add to Chrome</a>
+      <!-- CHROME_STORE_URL -->
+      <a class="btn btn-dark btn-small" href="#pricing">Add to Chrome</a>
     </div>
   </header>
 
   <main id="top">
-    <!-- Hero -->
+    <!-- ============ Hero ============ -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Chrome extension · Free to start</p>
-          <h1>Turn any web table or list into clean data in 1 click</h1>
-          <p class="lead">
-            Extract any web table or list, enrich emails &amp; phones locally, and export to Excel, AI, or Webhooks in 1 click.
-          </p>
-          <div class="hero-actions">
-            <!-- CHROME_STORE_URL -->
-            <a class="btn btn-primary" href="#pricing">Add to Chrome – it's free</a>
-            <a class="btn btn-ghost" href="#how">See how it works</a>
+      <div class="container hero-inner">
+        <a class="pill" href="#pricing"><span class="pill-dot"></span>Free Chrome extension · no sign-up</a>
+        <h1>Copy any table from the web <em>straight into Excel.</em></h1>
+        <p class="lead">Point at a table or list on any website and TableSnap turns it into clean rows: ready to download, paste into Google Sheets or hand to your AI.</p>
+        <div class="hero-actions">
+          <!-- CHROME_STORE_URL -->
+          <a class="btn btn-primary btn-large" href="#pricing">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
+            Add to Chrome – it's free
+          </a>
+          <a class="btn btn-ghost btn-large" href="#examples">See real examples</a>
+        </div>
+        <ul class="hero-facts">
+          <li><strong>0</strong> row limits</li>
+          <li><strong>100%</strong> in your browser</li>
+          <li><strong>5</strong> languages</li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <figure class="browser hero-shot">
+          <div class="browser-bar" aria-hidden="true">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span class="url">en.wikipedia.org/wiki/List_of_countries_by_GDP</span>
           </div>
-          <ul class="trust-list">
-            <li>Runs 100% in your browser</li>
-            <li>No account needed</li>
-            <li>We never see your data</li>
-          </ul>
+          <img src="img/1-extract-table.jpg" width="1280" height="800" alt="TableSnap side panel next to a Wikipedia table, showing 222 extracted rows ready to download as Excel">
+          <figcaption class="float-card float-left" aria-hidden="true">
+            <span class="fc-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <span><strong>222 rows found</strong><small>in one click</small></span>
+          </figcaption>
+          <figcaption class="float-card float-right" aria-hidden="true">
+            <span class="fc-file">XLSX</span>
+            <span><strong>Saved as Excel</strong><small>222 rows · 4 columns</small></span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ Works on ============ -->
+    <section class="works-on" aria-label="Works on">
+      <div class="container">
+        <p>Works on the sites where your data lives</p>
+        <ul>
+          <li>Google Maps</li><li>Amazon</li><li>LinkedIn</li><li>Booking</li><li>Wikipedia</li><li>Yellow pages</li><li>Any HTML table</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ Examples (tabs) ============ -->
+    <section id="examples" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Real results, not mockups</p>
+          <h2>From a messy page to tidy columns.</h2>
+          <p class="section-lead">These are real captures made with TableSnap. It recognises titles, prices, ratings, addresses and links on its own.</p>
         </div>
 
-        <!-- Product mock: side panel -->
-        <div class="mock" aria-hidden="true">
-          <div class="mock-bar">
-            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-            <span class="mock-title">TableSnap</span>
-            <span class="mock-badge">Pro Plan · Active</span>
+        <div class="tabs" role="tablist" aria-label="Examples">
+          <button role="tab" aria-selected="true" aria-controls="ex-panel" data-src="img/2-google-maps-list.jpg" data-url="google.com/maps/search/restaurants+in+barcelona" data-alt="Google Maps restaurant results turned into rows with title, rating, price and address" data-note="15 restaurants across 3 pages – name, stars, price, type and address.">Google Maps</button>
+          <button role="tab" aria-selected="false" aria-controls="ex-panel" data-src="img/3-find-phones-emails.jpg" data-url="paginasamarillas.es/search/fontaneros/barcelona" data-alt="A business directory turned into rows with phone numbers found on each company's website" data-note="25 plumbers with their website, address – and the phone found on each website.">Business directory</button>
+          <button role="tab" aria-selected="false" aria-controls="ex-panel" data-src="img/1-extract-table.jpg" data-url="en.wikipedia.org/wiki/List_of_countries_by_GDP" data-alt="A Wikipedia table with 222 rows extracted into the side panel" data-note="222 countries – footnotes removed, numbers stay numbers in Excel.">Wikipedia table</button>
+        </div>
+
+        <figure class="browser example-shot" id="ex-panel" role="tabpanel">
+          <div class="browser-bar" aria-hidden="true">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span class="url" id="ex-url">google.com/maps/search/restaurants+in+barcelona</span>
           </div>
-          <div class="mock-body">
-            <div class="mock-btn">Pick table or list on page</div>
-            <div class="mock-summary"><strong>Found 214 rows</strong><span>3 pages</span></div>
-            <div class="mock-chips">
-              <span>Company</span><span>Website</span><span>Emails</span><span>Phones</span>
+          <img id="ex-img" src="img/2-google-maps-list.jpg" width="1280" height="800" loading="lazy" alt="Google Maps restaurant results turned into rows with title, rating, price and address">
+        </figure>
+        <p class="example-note" id="ex-note">15 restaurants across 3 pages – name, stars, price, type and address.</p>
+      </div>
+    </section>
+
+    <!-- ============ Features (bento) ============ -->
+    <section id="features" class="section section-tint">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">What it does</p>
+          <h2>Everything after “I need this in a spreadsheet”.</h2>
+        </div>
+
+        <div class="bento">
+          <article class="cell cell-wide">
+            <div class="cell-text">
+              <h3>Point, click, done</h3>
+              <p>Hover a table or a list of cards – products, shops, companies – and click. TableSnap lines up the columns for you and skips buttons, ads and clutter.</p>
             </div>
-            <table class="mock-table">
-              <thead><tr><th>Company</th><th>Emails</th><th>Phones</th></tr></thead>
-              <tbody>
-                <tr><td>Acme Corp</td><td>hello@acme.com</td><td>+1 415 555 0132</td></tr>
-                <tr><td>Northwind</td><td>sales@northwind.io</td><td>+44 20 7946 0958</td></tr>
-                <tr><td>Globex</td><td>info@globex.es</td><td>+34 912 345 678</td></tr>
-                <tr><td>Initech</td><td>team@initech.co</td><td>(555) 123-4567</td></tr>
-              </tbody>
-            </table>
-            <div class="mock-actions">
-              <span>Download CSV</span><span>Copy for AI</span>
+            <div class="mini-sheet" aria-hidden="true">
+              <div class="ms-row ms-head"><span>Title</span><span>Rating</span><span>Price</span></div>
+              <div class="ms-row"><span>Harbor Café</span><span>4.7 ★</span><span>€10–20</span></div>
+              <div class="ms-row"><span>Olive &amp; Thyme</span><span>4.8 ★</span><span>€20–30</span></div>
+              <div class="ms-row"><span>The Green Fork</span><span>4.6 ★</span><span>€20–40</span></div>
             </div>
-          </div>
+          </article>
+
+          <article class="cell">
+            <span class="cell-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+            <h3>Every page, not just the first</h3>
+            <p>Follows “Next”, “Load more” and endless scrolling, and removes duplicates as it goes.</p>
+          </article>
+
+          <article class="cell cell-tall cell-dark">
+            <span class="cell-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg></span>
+            <h3>Emails &amp; phones for every row</h3>
+            <p>TableSnap visits each website in your list and brings back public emails, phone numbers and social profiles – even from the “Contact” page.</p>
+            <ul class="contact-list" aria-hidden="true">
+              <li><span>Northside Plumbing</span><b>hello@northside.example</b></li>
+              <li><span>Casa Verde Studio</span><b>+34 600 000 123</b></li>
+              <li><span>Blue Harbor Dental</span><b>info@blueharbor.example</b></li>
+            </ul>
+            <span class="tag-pro">Pro</span>
+          </article>
+
+          <article class="cell">
+            <span class="cell-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg></span>
+            <h3>Real Excel files</h3>
+            <p>.xlsx with a frozen header and filters, CSV, or one-click copy into Google Sheets. Numbers stay numbers.</p>
+          </article>
+
+          <article class="cell">
+            <span class="cell-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 7v5l3 3"/></svg></span>
+            <h3>Ready for your AI</h3>
+            <p>Copy as a Markdown table or compact JSON and paste it into ChatGPT, Claude or Gemini.</p>
+          </article>
+
+          <article class="cell">
+            <span class="cell-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M18 22a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="m8.6 13.5 6.8 4"/><path d="m15.4 6.5-6.8 4"/></svg></span>
+            <h3>Send to n8n, Make or Zapier</h3>
+            <p>Push rows to a webhook and let your automations do the rest. <span class="tag-pro tag-inline">Pro</span></p>
+          </article>
+
+          <article class="cell">
+            <span class="cell-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20"/><path d="M12 2a15 15 0 0 0 0 20"/></svg></span>
+            <h3>Speaks your language</h3>
+            <p>English, Español, Português, Français and Deutsch – column names included.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Features -->
-    <section id="features" class="section">
+    <!-- ============ How ============ -->
+    <section id="how" class="section">
       <div class="container">
-        <h2 class="section-title">Everything you need to grab web data</h2>
-        <p class="section-lead">No code, no copy-paste mess, no cloud scraper. Just point, click and export.</p>
-
-        <div class="feature-grid">
-          <article class="feature">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 3 7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/><path d="m13 13 6 6"/></svg>
-            </div>
-            <h3>Smart Table &amp; Card Picker</h3>
-            <p>Hover any HTML table or modern card list (products, companies, listings) and click. TableSnap lines up the columns for you: titles, prices, ratings, reviews and links.</p>
-          </article>
-
-          <article class="feature">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/><polyline points="3 18 9 12 3 6"/></svg>
-            </div>
-            <h3>Auto-Pagination</h3>
-            <p>Detects the “Next” button and keeps collecting page after page, removing duplicates as it goes. Stop whenever you want.</p>
-          </article>
-
-          <article class="feature">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
-            </div>
-            <h3>Local Email &amp; Phone Enricher</h3>
-            <p>Visits each link in your list and finds public emails, phone numbers and social profiles. It runs on your computer, and it filters out code IDs and fake numbers.</p>
-          </article>
-
-          <article class="feature">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3"/><path d="M12 18v3"/><path d="M3 12h3"/><path d="M18 12h3"/><circle cx="12" cy="12" r="4"/></svg>
-            </div>
-            <h3>Copy for Claude, ChatGPT &amp; any AI</h3>
-            <p>One click copies your data as a clean Markdown table or compact JSON, ready to paste into Claude, ChatGPT or Gemini for analysis.</p>
-          </article>
-
-          <article class="feature">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
-            </div>
-            <h3>Webhooks for n8n, Make &amp; Zapier</h3>
-            <p>Send your rows straight to your automations as JSON. Build lead lists, price trackers or reports without touching a spreadsheet.</p>
-          </article>
-
-          <article class="feature">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-            </div>
-            <h3>Excel, Google Sheets &amp; CSV</h3>
-            <p>Copy straight into Sheets or Excel, or download a CSV that opens perfectly in Excel, with accents and special characters intact.</p>
-          </article>
+        <div class="section-head">
+          <p class="kicker">How it works</p>
+          <h2>Three steps. No settings.</h2>
         </div>
-      </div>
-    </section>
-
-    <!-- How it works -->
-    <section id="how" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title">How it works</h2>
         <ol class="steps">
-          <li>
-            <span class="step-num">1</span>
-            <h3>Open the side panel</h3>
-            <p>Click the TableSnap icon in your Chrome toolbar.</p>
-          </li>
-          <li>
-            <span class="step-num">2</span>
-            <h3>Pick a table or list</h3>
-            <p>Hover the data on the page and click once. You'll see every row right away.</p>
-          </li>
-          <li>
-            <span class="step-num">3</span>
-            <h3>Export anywhere</h3>
-            <p>Excel, Sheets, CSV, your AI assistant or your webhook. Done.</p>
-          </li>
+          <li><span class="step-num">1</span><h3>Open the panel</h3><p>Click the TableSnap icon in Chrome (or press <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>).</p></li>
+          <li><span class="step-num">2</span><h3>Click the data</h3><p>Hover the table or list on the page and click once. Every row appears instantly.</p></li>
+          <li><span class="step-num">3</span><h3>Take it anywhere</h3><p>Excel, Google Sheets, CSV, your AI assistant or your automations.</p></li>
         </ol>
       </div>
     </section>
 
-    <!-- Pricing -->
+    <!-- ============ Privacy ============ -->
+    <section class="section privacy-band">
+      <div class="container privacy-grid">
+        <div>
+          <p class="kicker kicker-light">Private by design</p>
+          <h2>Your data never leaves your browser.</h2>
+          <p class="section-lead">There is no TableSnap server collecting what you extract. The extension reads the page you choose, on your computer, and that's it.</p>
+        </div>
+        <ul class="privacy-points">
+          <li><strong>No account.</strong> Install and use it right away.</li>
+          <li><strong>No tracking.</strong> No analytics on your extractions.</li>
+          <li><strong>No uploads.</strong> Files are created on your device.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ Pricing ============ -->
     <section id="pricing" class="section">
       <div class="container">
-        <h2 class="section-title">Simple pricing</h2>
-        <p class="section-lead">Start free. Upgrade when you need more rows and automation.</p>
+        <div class="section-head">
+          <p class="kicker">Pricing</p>
+          <h2>Free for tables. Pro for leads.</h2>
+          <p class="section-lead">Extracting and exporting is free with no row limits. Upgrade when you need contacts and automation.</p>
+        </div>
+
+        <div class="billing-switch" role="radiogroup" aria-label="Billing period">
+          <button type="button" role="radio" aria-checked="true" data-period="annual">Yearly <span class="save">−55%</span></button>
+          <button type="button" role="radio" aria-checked="false" data-period="monthly">Monthly</button>
+        </div>
 
         <div class="pricing-grid">
           <article class="plan">
             <h3>Free</h3>
             <p class="price">$0</p>
-            <p class="plan-note">Forever</p>
-            <ul class="plan-list">
-              <li>Preview every row of any table or list</li>
-              <li>Export up to 25 rows (CSV, Sheets, AI)</li>
-              <li>Auto-paginate up to 3 pages</li>
-              <li>Enrich demo: 3 links</li>
-            </ul>
+            <p class="plan-note">Forever, no card needed</p>
             <!-- CHROME_STORE_URL -->
             <a class="btn btn-ghost btn-block" href="#top">Add to Chrome</a>
+            <ul class="plan-list">
+              <li>Unlimited rows to Excel, CSV, Sheets &amp; AI</li>
+              <li>Next / Load more: up to 3 pages</li>
+              <li>Emails &amp; phones: try it on 3 links</li>
+              <li>English, Español, Português, Français, Deutsch</li>
+            </ul>
           </article>
 
-          <article class="plan">
-            <h3>Pro Monthly</h3>
-            <p class="price">$9<span>/mo</span></p>
-            <p class="plan-note">Cancel anytime</p>
+          <article class="plan plan-pro">
+            <div class="plan-top">
+              <h3>Pro</h3>
+              <span class="plan-tag">Most popular</span>
+            </div>
+            <p class="price"><span data-annual="$49" data-monthly="$9" class="price-num">$49</span><span class="price-per" data-annual="/year" data-monthly="/month">/year</span></p>
+            <p class="plan-note" data-annual="About $4 a month, billed yearly" data-monthly="Cancel anytime">About $4 a month, billed yearly</p>
+            <a class="btn btn-primary btn-block" id="buy-pro"
+               data-annual="https://buy.polar.sh/polar_cl_P8HacHliLxflWS9cW8lEKFRY1Eehb76yD7eQJ26DUJu"
+               data-monthly="https://buy.polar.sh/polar_cl_wHjmhuAlC6P76dPnIyHRtIRCjuUVCbOmGxTx41KBNSf"
+               href="https://buy.polar.sh/polar_cl_P8HacHliLxflWS9cW8lEKFRY1Eehb76yD7eQJ26DUJu" rel="noopener">Get Pro</a>
             <ul class="plan-list">
-              <li>Unlimited rows on every export</li>
+              <li>Everything in Free</li>
+              <li>Emails, phones &amp; social links for every row</li>
               <li>Auto-paginate up to 100 pages</li>
-              <li>Enrich every link (emails, phones, social)</li>
               <li>Webhooks for n8n, Make &amp; Zapier</li>
             </ul>
-            <a class="btn btn-ghost btn-block" href="https://buy.polar.sh/polar_cl_wHjmhuAlC6P76dPnIyHRtIRCjuUVCbOmGxTx41KBNSf" rel="noopener">Get Pro Monthly</a>
-          </article>
-
-          <article class="plan plan-featured">
-            <span class="plan-tag">Save 55%</span>
-            <h3>Pro Annual</h3>
-            <p class="price">$49<span>/yr</span></p>
-            <p class="plan-note">That's about $4 per month</p>
-            <ul class="plan-list">
-              <li>Everything in Pro Monthly</li>
-              <li>Best value for regular use</li>
-              <li>One payment per year</li>
-            </ul>
-            <a class="btn btn-primary btn-block" href="https://buy.polar.sh/polar_cl_P8HacHliLxflWS9cW8lEKFRY1Eehb76yD7eQJ26DUJu" rel="noopener">Get Pro Annual</a>
           </article>
         </div>
-        <p class="pricing-foot">Secure checkout by Polar.sh. You'll receive your license key by email: paste it in the extension under “Free Plan · Upgrade”.</p>
+        <p class="pricing-foot">Secure checkout by Polar.sh. Your license key arrives by email – paste it in the extension under “Free Plan · Upgrade”.</p>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="section section-alt">
-      <div class="container faq">
-        <h2 class="section-title">Questions</h2>
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="section section-tint">
+      <div class="container faq-grid">
+        <div class="section-head section-head-left">
+          <p class="kicker">FAQ</p>
+          <h2>Questions, answered.</h2>
+          <p class="section-lead">Something else? Write to <a href="mailto:patatapy@gmail.com">patatapy@gmail.com</a> – a real person replies.</p>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>Do you see or store the data I extract?</summary>
+            <p>No. Extraction and the email &amp; phone search run entirely inside your Chrome browser. Your tables never reach our servers. Read our <a href="privacy.html">Privacy Policy</a>.</p>
+          </details>
+          <details>
+            <summary>Which websites does it work on?</summary>
+            <p>Most websites with tables or repeating lists: maps, directories, marketplaces, search results, Wikipedia, dashboards and more. It can't run on Chrome's own pages or the Chrome Web Store.</p>
+          </details>
+          <details>
+            <summary>Is the free plan really unlimited?</summary>
+            <p>Yes. There's no row limit on extracting, downloading or copying. Pro adds the email &amp; phone search for every row, long pagination and webhooks.</p>
+          </details>
+          <details>
+            <summary>How do I activate Pro?</summary>
+            <p>Buy a plan, copy the license key from your Polar email, open TableSnap, click the “Free Plan” badge and paste the key.</p>
+          </details>
+          <details>
+            <summary>Can I cancel or move my license?</summary>
+            <p>Cancel anytime from the Polar link in your receipt. To move to another computer, click the “Pro Plan” badge, choose “Deactivate this device” and activate the key on the new one.</p>
+          </details>
+        </div>
+      </div>
+    </section>
 
-        <details>
-          <summary>Do you see or store the data I extract?</summary>
-          <p>No. Extraction and enrichment run entirely inside your Chrome browser. Your tables never reach our servers. Read our <a href="privacy.html">Privacy Policy</a>.</p>
-        </details>
-        <details>
-          <summary>Which websites does it work on?</summary>
-          <p>Most websites with tables or repeating lists: directories, marketplaces, search results, Wikipedia, dashboards and more. It can't run on Chrome's own pages or the Chrome Web Store.</p>
-        </details>
-        <details>
-          <summary>How do I activate Pro?</summary>
-          <p>Buy a plan, copy the license key from your Polar email, open TableSnap, click the “Free Plan” badge and paste the key. That's it.</p>
-        </details>
-        <details>
-          <summary>Can I cancel anytime?</summary>
-          <p>Yes. Manage or cancel your subscription from the Polar customer portal link in your receipt email.</p>
-        </details>
-        <details>
-          <summary>Can I move my license to another computer?</summary>
-          <p>Yes. Click the “Pro Plan” badge and choose “Deactivate this device”, then activate the same key on the new computer.</p>
-        </details>
+    <!-- ============ Final CTA ============ -->
+    <section class="final-cta">
+      <div class="container final-inner">
+        <h2>Stop copy-pasting <em>row by row.</em></h2>
+        <p>Install TableSnap and get your first table into Excel in under a minute.</p>
+        <!-- CHROME_STORE_URL -->
+        <a class="btn btn-primary btn-large" href="#pricing">Add to Chrome – it's free</a>
       </div>
     </section>
   </main>
@@ -257,11 +320,41 @@
       </div>
       <nav class="footer-links" aria-label="Footer">
         <a href="privacy.html">Privacy Policy</a>
-        <!-- Support e-mail: change it here if you use a different address -->
         <a href="mailto:patatapy@gmail.com">patatapy@gmail.com</a>
       </nav>
       <p class="footer-copy">© 2026 TableSnap. Not affiliated with Google.</p>
     </div>
   </footer>
+
+  <script>
+    // Example tabs
+    (() => {
+      const tabs = document.querySelectorAll('.tabs [role="tab"]');
+      const img = document.getElementById('ex-img');
+      const url = document.getElementById('ex-url');
+      const note = document.getElementById('ex-note');
+      tabs.forEach(tab => tab.addEventListener('click', () => {
+        tabs.forEach(t => t.setAttribute('aria-selected', String(t === tab)));
+        img.src = tab.dataset.src;
+        img.alt = tab.dataset.alt;
+        url.textContent = tab.dataset.url;
+        note.textContent = tab.dataset.note;
+      }));
+    })();
+
+    // Yearly / monthly switch
+    (() => {
+      const buttons = document.querySelectorAll('.billing-switch [role="radio"]');
+      const targets = document.querySelectorAll('.plan-pro [data-annual]');
+      buttons.forEach(btn => btn.addEventListener('click', () => {
+        const period = btn.dataset.period;
+        buttons.forEach(b => b.setAttribute('aria-checked', String(b === btn)));
+        targets.forEach(el => {
+          const value = el.dataset[period];
+          if (el.tagName === 'A') el.href = value; else el.textContent = value;
+        });
+      }));
+    })();
+  </script>
 </body>
 </html>
