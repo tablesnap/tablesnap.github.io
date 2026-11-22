@@ -57,4 +57,46 @@
     <lastmod>2026-11-22</lastmod>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://tablesnap.github.io/amazon-to-excel.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tablesnap.github.io/amazon-to-excel.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tablesnap.github.io/es/amazon-a-excel.html"/>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tablesnap.github.io/es/amazon-a-excel.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tablesnap.github.io/es/amazon-a-excel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tablesnap.github.io/amazon-to-excel.html"/>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tablesnap.github.io/booking-to-excel.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tablesnap.github.io/booking-to-excel.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tablesnap.github.io/es/booking-a-excel.html"/>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tablesnap.github.io/es/booking-a-excel.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tablesnap.github.io/es/booking-a-excel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tablesnap.github.io/booking-to-excel.html"/>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tablesnap.github.io/website-table-to-google-sheets.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tablesnap.github.io/website-table-to-google-sheets.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tablesnap.github.io/es/tabla-web-a-google-sheets.html"/>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tablesnap.github.io/es/tabla-web-a-google-sheets.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tablesnap.github.io/es/tabla-web-a-google-sheets.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tablesnap.github.io/website-table-to-google-sheets.html"/>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.8</priority>
+  </url>
 </urlset>

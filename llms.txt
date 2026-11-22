@@ -3,7 +3,7 @@
 > TableSnap is a Chrome extension that turns any table or repeating list on a web page into clean rows. You can download them as Excel (.xlsx) or CSV, paste them into Google Sheets, copy them as Markdown/JSON for an AI assistant, or send them to a webhook. Everything runs inside the user's browser; extracted data never reaches TableSnap's servers.
 
 ## What it does
-- Point-and-click extraction of HTML tables and of "lists of cards" (search results, product grids, Google Maps results, directories, LinkedIn results, Booking listings).
+- Point-and-click extraction of HTML tables and of "lists of cards" (search results, product grids, Google Maps results, directories, Amazon search results, Booking.com hotel lists).
 - Automatic column names (title, price, rating, reviews, address, link…) and clean numbers in Excel.
 - Pagination: follows "Next" buttons, "Load more" buttons and infinite scroll, removing duplicate rows.
 - Optional contact lookup ("Find emails & phones"): visits the websites listed in the user's table and collects the public emails, phone numbers and social links they publish.
@@ -17,9 +17,15 @@
 - [Export Google Maps results to Excel](https://tablesnap.github.io/google-maps-to-excel.html)
 - [Copy a table from any website into Excel](https://tablesnap.github.io/website-table-to-excel.html)
 - [Turn a business directory into a spreadsheet with phones and emails](https://tablesnap.github.io/business-directory-to-excel.html)
+- [Export Amazon search results to Excel for price research](https://tablesnap.github.io/amazon-to-excel.html)
+- [Compare Booking.com hotels in Excel](https://tablesnap.github.io/booking-to-excel.html)
+- [Get a web table into Google Sheets when IMPORTHTML fails](https://tablesnap.github.io/website-table-to-google-sheets.html)
 - [Exportar Google Maps a Excel (español)](https://tablesnap.github.io/es/google-maps-a-excel.html)
 - [Copiar una tabla web a Excel (español)](https://tablesnap.github.io/es/tabla-web-a-excel.html)
 - [Directorio de empresas a Excel (español)](https://tablesnap.github.io/es/directorio-a-excel.html)
+- [Exportar resultados de Amazon a Excel (español)](https://tablesnap.github.io/es/amazon-a-excel.html)
+- [Comparar hoteles de Booking.com en Excel (español)](https://tablesnap.github.io/es/booking-a-excel.html)
+- [Pasar una tabla web a Google Sheets sin IMPORTHTML (español)](https://tablesnap.github.io/es/tabla-web-a-google-sheets.html)
 
 ## Policies
 - [Privacy Policy](https://tablesnap.github.io/privacy.html)
